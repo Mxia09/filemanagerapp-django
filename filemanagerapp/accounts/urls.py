@@ -1,6 +1,7 @@
 from django.urls import path
-from accounts.views import user_login
+from accounts.views import home
 
 urlpatterns = [
-    path("login/", user_login, name="login"),
+    # path("login/", user_login, name="login"),
+    path("/", home, name="home")
 ]
